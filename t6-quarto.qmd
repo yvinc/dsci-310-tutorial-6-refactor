@@ -63,6 +63,7 @@ penguin_workflow <- workflow() %>%
 # Fit model
 penguin_fit <- penguin_workflow %>%
   fit(data = train_data)
+penguin_fit
 ```
 
 # Results
@@ -73,10 +74,11 @@ We evaluate the performance of the model using the test dataset.
 # Predict on test data
 predictions <- predict(penguin_fit, test_data, type = "class") %>%
   bind_cols(test_data)
-
+predictions
 # Confusion matrix
 conf_mat <- conf_mat(predictions, truth = species, estimate = .pred_class)
 conf_mat
+autoplot(conf_mat, type = 'heatmap')
 ```
 
 # Conclusion
