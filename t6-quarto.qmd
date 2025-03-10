@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 6: Refactoring R Code"
+title: My not so awesome report
 format:
   html:
     embed-resources: true
