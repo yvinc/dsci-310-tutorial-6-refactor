@@ -1,8 +1,9 @@
 ---
 title: My not so awesome report
+
 format:
-  html:
-    embed-resources: true
+   html:
+     embed-resources: true
 ---
 
 # Introduction
